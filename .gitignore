@@ -5,3 +5,10 @@ target
 tmp
 .history
 dist
+bin/
+data/
+db/
+test-result/
+lib/
+tmp/
+modules/
