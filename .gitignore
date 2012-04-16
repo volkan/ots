@@ -1,3 +1,4 @@
+.idea/
 logs
 project/project
 project/target
@@ -12,3 +13,9 @@ test-result/
 lib/
 tmp/
 modules/
+target/
+.project
+.classpath
+.cache
+.settings/
+.target/

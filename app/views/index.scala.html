@@ -1,7 +1,16 @@
 @(message: String)
 
+@import helper._
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
+
 @main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message)
-    
+    @wflash()
+    mesaj: @message
+
+<script type="text/javascript">
+    (function () {
+        var greet = Messages('greeting', 'World');
+        document.body.appendChild(document.createTextNode(greet));
+    })();
+</script>
 }
