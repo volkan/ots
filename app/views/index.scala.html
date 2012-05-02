@@ -3,7 +3,7 @@
 @import helper._
 @implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
 
-@main("Welcome to Play 2.0") {
+@main(title = "Title")(flash) {
     @wflash()
     mesaj: @message
 

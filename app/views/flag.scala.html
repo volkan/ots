@@ -1,0 +1,7 @@
+@()(implicit flash:Flash)
+
+@if(flash.get("error")) {
+<p style="color:#c00">
+    @flash.get("error")
+</p>
+}
