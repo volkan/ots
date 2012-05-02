@@ -7,7 +7,7 @@ import play.api.data.Forms._
 import play.api.Play.current
 import play.i18n.Messages;
 import jsmessages.JsMessages
-
+import anorm._
 
 import models._
 import views._
@@ -46,11 +46,12 @@ object Application extends Controller {
     Ok(views.html.index("Your new application is ready."))
   }
 
-  def index = Action { implicit request =>
 
+  def index = Action { implicit request =>
     //flash.+("success" -> Messages.get("youve.been.logged.out"));
     //flash("success" -> Messages.get("youve.been.logged.out"));
-    Ok(views.html.index("Your new application is ready."))
+    val message = User.findAll.last.email
+    Ok(views.html.index( "mesaj" + message ))
   }
 
   def jsMessages = Action { implicit request =>

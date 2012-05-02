@@ -3,14 +3,7 @@
 @import helper._
 @implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
 
-@main(title = "Title")(flash) {
+@main(title = "Başlık") {
     @wflash()
     mesaj: @message
-
-<script type="text/javascript">
-    (function () {
-        var greet = Messages('greeting', 'World');
-        document.body.appendChild(document.createTextNode(greet));
-    })();
-</script>
 }

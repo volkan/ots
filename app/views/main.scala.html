@@ -1,4 +1,4 @@
-@(title: String)(content: Html)(implicit flash: Flash)
+@(title: String)(content: Html)
 
 <!DOCTYPE html>
 
@@ -12,7 +12,7 @@
         <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
     </head>
     <body>  main
-    @flag()
+
 
     <div class="container">
          @content
